@@ -1,42 +1,139 @@
 body {
-    background-image: url("https://wallpapercave.com/wp/wp2411501.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #800020;
 }
-nav {
+li {
     color: white;
+    list-style: none;
+}
+ul {
+    /* padding-left: 5px; */
+    padding-top: 15px;
 }
 .container {
-    max-width: 960px;
+    /* max-width: 960px; */
     margin: 0 auto;
-    /* background-color: aquamarine; */
+    height: 100vh;
+    padding-top: 50px;
 }
-
+.homepage {
+    background-image: url("https://wallpapercave.com/wp/wp2411501.jpg");
+}
+.gameshp {
+    background-image: url("https://wallpapercave.com/wp/wp6004876.jpg");
+}
+.magic {
+    background-image: url("https://images3.alphacoders.com/114/thumb-1920-11439.png");
+}
+.rock {
+    background-image: url("https://th.bing.com/th/id/R.8e8d35bbd86358ac74a5e3c014f4678e?rik=jPb0CjJp0%2bJerw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fIcHvtxD.jpg&ehk=T3tFrSICIurvmI7bZCLoBPh9VDR1mRzZYd3uzRjE%2fx8%3d&risl=&pid=ImgRaw&r=0");
+}
+.secret {
+    background-image: url("https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif");
+}
+.movies {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-image: url("https://th.bing.com/th/id/R.2362fae216bca4b64c66a0dc45922e3e?rik=OIYU%2bEMH0dYGPw&riu=http%3a%2f%2fbesthqwallpapers.com%2fUploads%2f25-2-2021%2f157484%2fthumb2-4k-filmstrip-textures-vector-backgrounds-grunge-backgrounds-cinematograph.jpg&ehk=hDR9XAo0KfIIcSfPKUP%2f0D%2bkyExz6KhnNdHe%2fMpamBs%3d&risl=&pid=ImgRaw&r=0");
+}
+.movie_page {
+    display: flex;
+    justify-content: center;
+}
+.movie {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    Height: 100vh;
+    background-image: url("https://ak5.picdn.net/shutterstock/videos/14759545/thumb/1.jpg")
+}
+.movie_titles {
+    color: chartreuse;
+    padding-top: 20px;
+}
+.homepage, .gameshp, .magic, .secret, .rock {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 125vh;
+}
+.links{
+    color: white;
+    text-decoration: solid;
+    margin: auto 20px;
+}
+div.form {
+    width: 75%;
+    margin: 50px auto;
+}
+a {
+    margin: 9.5;
+}
 .thumb {
-    height: 10em;
+    height: 15em;
+    width: 10em;
 }
-
+.poster {
+    height: 15em;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
+    /* padding: 5px; */
+}
+.poster:hover {
+    box-shadow: 0 5px 10px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
 .feature {
-    max-height: 30em;
+    height: 90vh;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 label {
     display: block;
 }
-.magic {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.col-md-6 {
-    width: 300px;
-    height: 250px;
-    border: 3px solid black;
-    background: #800020;
-    margin: 50px auto;
-    padding: 15px 10px;
+  h1, h2, h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
   }
-  
-  img {
-    width: 100%;
-    height: 100%;
+  h1 {
+    padding-top: 30px;
+  }
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .text-center{
+    color: white;
+  }
+  .controls {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .preview {
+    border: 1px solid white ;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+  }
+  .saw {
+    width: 50vw;
+  }
+  .loser {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://image.tmdb.org/t/p/original/eSwaougbenYFP4NFTccJYGJnnK8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .lost {
+    color: black;
+    font-size: 48px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px darkred, 0 0 25px #800020, 0 0 5px red;
   }

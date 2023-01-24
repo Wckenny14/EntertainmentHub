@@ -1,6 +1,34 @@
-<h1>Games Homepage</h1>
+<%# <div class="gameshp">
+<h1 class="text-white">Games Homepage</h1>
  <nav>
       <a href="/magic">Magic 8 Ball</a>
       <a href="/secret">Guess the Number</a>
       <a href="/rockpaperscissor">Rock, Paper, Scissors, Lizard, Spock</a>
     </nav>
+</div> %>
+
+<div class="gameshp">
+    <div class="container">
+      <%# <h1 class="text-white">Games</h1> %>
+      <div class="row justify-content-around">
+            <div class="col-4">
+                <h3>Star Wars Game</h3>
+                <%= link_to magic_path do %>
+                    <%= image_tag "https://i.pinimg.com/originals/41/9e/e3/419ee367eaf14d97306a6e0e7c0804f0.jpg" , :class => 'poster' %>
+                <% end %>
+            </div>
+            <div class="col-4">
+                <h3>Saw Game</h3>
+                <%= link_to secret_path do %>
+                    <%= image_tag "https://bloody-disgusting.com/wp-content/uploads/2018/06/saw-the-game-img6.jpg", :class => 'poster' %>
+                <% end %>
+            </div>
+            <div class="col-4">
+                <h3>Star Trek Game</h3>
+                <%= link_to rockpaperscissor_path do %>
+                    <%= image_tag "https://qph.fs.quoracdn.net/main-qimg-56edbfe92273c68f6949bddddc08d19a-c", :class => 'poster' %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

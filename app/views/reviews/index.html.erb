@@ -1,26 +1,21 @@
 <% if @current_user.present?%>
     <% if @current_user.admin? %>
         <h1>All Reviews</h1>
-        <% @reviews.each do |review| %>
-        
+            <% @reviews.each do |review| %>
+            <ul>
+                <li>Name: <%= link_to review.title, review %></li>
+                <li>Movie: <%= review.movie.title %></li>
+                <li>Comment: <%= review.comment %></li>
+            </ul>
+            <% end %>
+    <% else %>
+    <h1>My Reviews</h1>
+        <% @current_user.reviews.each do |review|%>
         <ul>
-            <%# <li>Movie: <%= review.movie.title %>
             <li>Name: <%= link_to review.title, review %></li>
+            <li>Movie: <%= review.movie.title %></li>
             <li>Comment: <%= review.comment %></li>
-            
         </ul>
         <% end %>
-        <% else %>
-            <h1>My Reviews</h1>
-<%# ask CJ and Joel how I make this specific to users that can add a review and others can also add %>
-<% @current_user.reviews.each do |review|%>
-    <ul>
-        <%# <li>Movie: <%= review.movie.title %>
-        <li>Name: <%= link_to review.title, review %></li>
-        <li>Movie: <%= review.movie.title %></li>
-        <li>Comment: <%= review.comment %></li>
-        
-    </ul>
-<% end %>
     <% end %>
 <% end %>
