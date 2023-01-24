@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project1</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <%= link_to "Home", root_path, :class => 'nav-link active' %>
+                <%# Link for home page %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Movies', movies_path, :class => 'nav-link active' %>
+                <%# link for movies page %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Games', games_path, :class => 'nav-link active' %>
+                <%# link for games page %>
+              </li>
+
+              <li class="nav-item">
+                <%= link_to 'Log In', login_path, :class => 'nav-link active' %>
+                <%# link for log in page %>
+              </li>
+
+              <li class="nav-item">
+                <%= link_to 'Sign-up', new_user_path, :class => 'nav-link active' %>
+                <%# link for sign-up page %>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                <% if @current_user.present?%>
+                  <% if @current_user.admin? %>
+                    <%=link_to "All users", users_path, :class => "dropdown-item" %>
+                    <%= link_to "All reviews", reviews_path, :class => "dropdown-item" %>
+                  <% else %>
+                    <%= link_to "My Reviews", reviews_path, :class => "dropdown-item" %>
+                  <% end %>
+                  <%= link_to "New Review", new_review_path, :class => "dropdown-item" %>
+                  <%= link_to "Sign out", login_path, :method => 'delete', :class => "dropdown-item" %>
+                <% else %>
+                  <%= link_to 'Sign up', new_user_path, :class => "dropdown-item" %>
+                  <%= link_to 'Log in', login_path, :class => "dropdown-item" %>
+                <% end%>
+                  <%# <li><a class="dropdown-item" href="#">Games</a></li>
+                  <li><a class="dropdown-item" href="#">Movies</a></li> %>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!--nav>
+          <%= link_to_unless_current 'Home', root_path %>
+          <%= link_to_unless_current 'Movies', movies_path %>
+          <%= link_to_unless_current  'Games', games_path %>
+
+          <% if @current_user.present?%>
+            <% if @current_user.admin? %>
+              <%=link_to "All users", users_path %>
+              <%= link_to "All reviews", reviews_path %>
+            <% else %>
+              <%= link_to "My Reviews", reviews_path %>
+          <% end %>
+          <%= link_to "New Review", new_review_path%>
+          <%# <%= link_to 'My Favorites Lists', new_artist_path %>
+          <%= link_to "Sign out' #{ @current_user.email }", login_path, :method => 'delete' %>
+          <% else %>
+            <%= link_to 'Sign up', new_user_path %>
+            <%= link_to 'Log in', login_path %>
+          <% end%>
+        </nav-->
+    <%= yield %>
+  </body>
+</html>
+

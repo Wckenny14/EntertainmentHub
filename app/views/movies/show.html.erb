@@ -1,0 +1,26 @@
+<h1><%= @movie.title %></h1>
+
+<%= image_tag @movie.image, :class => 'feature' %>
+
+<ul>
+<li>Title: <%= @movie.title %></li>
+<li>Director: <%= @movie.director %></li>
+<li>Year Of Release: <%= @movie.year %></li>
+<li>Age Rating: <%= @movie.age %></li>
+<li>iMDb Score: <%= @movie.score %></li>
+<li>Where To Watch: <%= @movie.location %></li>
+<li>Synopsis: <%= truncate @movie.synopsis, :length => 1000 %></li>
+<% @movie.reviews.each do |review| %>
+    <li>Review: <%= review.title %>
+    <p><%= review.comment %></p></li>
+<% end %>
+</ul>
+
+<div class="controls">
+    <% if @current_user.present?%>
+        <% if @current_user.admin? %>
+            <%= link_to 'Edit movie', edit_movie_path(@movie), :class => 'links' %>
+            <%= link_to 'Delete movie', @movie, :method => 'delete', :data => { :confirm => 'Are you sure' }, :class => 'links' %>
+        <% end %>
+    <% end %>
+</div>
