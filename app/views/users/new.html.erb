@@ -10,6 +10,8 @@
 <% end%>
 <%# create form for users to sign-up %>
 <%= form_for @user do |f|  %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
 
     <%# email feild and label that will appear in the form %>
     <%= f.label :email %>

@@ -1,2 +1,16 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="user">
+    <h1 class="Welcome"><%= @user.name %></h1> 
+    <div class="user_page">
+        <ul>
+            <li>Email: <%= @user.email %></li>
+            <li>Nickname: <%= @user.name %></li>
+        </ul>
+    </div>
+    <div class="controls">
+        <% if @current_user.present?%>
+            <li class="nav-item">
+                <%= link_to 'Update details', edit_user_path(@user), :class => 'nav-link active' %>
+            </li>
+        <% end %>
+    </div>
+</div>

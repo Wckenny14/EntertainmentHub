@@ -1,3 +1,6 @@
+* {
+    font: arial;
+}
 body {
     background: #800020;
 }
@@ -25,7 +28,7 @@ ul {
     background-image: url("https://images3.alphacoders.com/114/thumb-1920-11439.png");
 }
 .rock {
-    background-image: url("https://th.bing.com/th/id/R.8e8d35bbd86358ac74a5e3c014f4678e?rik=jPb0CjJp0%2bJerw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fIcHvtxD.jpg&ehk=T3tFrSICIurvmI7bZCLoBPh9VDR1mRzZYd3uzRjE%2fx8%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("https://th.bing.com/th/id/OIP.sYUQO3y3HDKaLB49FDoFiQHaEK?w=333&h=187&c=7&r=0&o=5&dpr=2&pid=1.7");
 }
 .secret {
     background-image: url("https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif");
@@ -51,7 +54,7 @@ ul {
     color: chartreuse;
     padding-top: 20px;
 }
-.homepage, .gameshp, .magic, .secret, .rock {
+.homepage, .gameshp, .magic, .secret, .rock, .adminpage {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -96,9 +99,10 @@ label {
     color: white;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
   h1 {
-    padding-top: 30px;
+    padding-top: 15px;
   }
   h3 {
     padding-top: 20px;
@@ -121,6 +125,8 @@ label {
   }
   .saw {
     width: 50vw;
+    margin: 4em auto;
+    height: auto;
   }
   .loser {
     height: 100vh;
@@ -130,10 +136,51 @@ label {
     background-image: url("https://image.tmdb.org/t/p/original/eSwaougbenYFP4NFTccJYGJnnK8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+
   }
   .lost {
-    color: black;
-    font-size: 48px;
+    color: white;
+    position: absolute;
+    font-size: 100px;
     padding-bottom: 10px;
     text-shadow: 1px 1px 2px darkred, 0 0 25px #800020, 0 0 5px red;
+    top: 150px
   }
+  .mp {
+    max-width: 1146px;
+    margin: 0 auto;
+  }
+  .adminpage {
+    background-color: bisque;
+  }
+.survive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sawwonpage {
+    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2020/02/Saw-Game-Over.jpg?q=50&fit=crop&w=1500&dpr=1.5");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 125vh;
+}
+.congrats {
+    padding: 0;
+    padding-left: 270px;
+    padding-right: 270px;
+}
+h1.won {
+    color: white;
+    font-size: 60px;
+    padding-top: 100px;
+    text-shadow: 1px 1px 2px darkred, 0 0 25px #800020, 0 0 5px red;
+}
+.dash {
+    margin: 0;
+    padding: 0
+
+}
