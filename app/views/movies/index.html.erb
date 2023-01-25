@@ -6,11 +6,11 @@
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success" type="submit">Search</button>
 </form> %>
-    <section class="mp">
-    <% @movies.each do |movie| %>
-        <%= link_to image_tag(movie.image, :class => 'thumb' ), movie %>
-    <% end %>
-    </section>  
+    <%# <section class="mp"> %>
+    <%# <% @movies.each do |movie| %> %>
+        <%# <%= link_to image_tag(movie.image, :class => 'thumb' ), movie %> %>
+    <%# <% end %> %>
+    <%# </section>   %>
 
     <div class="control">
         <% if @current_user.present?%>
