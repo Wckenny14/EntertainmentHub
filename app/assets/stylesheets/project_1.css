@@ -8,66 +8,33 @@ li {
     color: white;
     list-style: none;
 }
-ul {
-    /* padding-left: 5px; */
-    padding-top: 15px;
-}
 .container {
     /* max-width: 960px; */
     margin: 0 auto;
     height: 100vh;
     padding-top: 50px;
 }
-.homepage {
-    background-image: url("https://wallpapercave.com/wp/wp2411501.jpg");
-}
-.gameshp {
-    background-image: url("https://wallpapercave.com/wp/wp6004876.jpg");
-}
-.magic {
-    background-image: url("https://images3.alphacoders.com/114/thumb-1920-11439.png");
-}
-.rock {
-    background-image: url("https://th.bing.com/th/id/OIP.sYUQO3y3HDKaLB49FDoFiQHaEK?w=333&h=187&c=7&r=0&o=5&dpr=2&pid=1.7");
-}
-.secret {
-    background-image: url("https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif");
-}
-.movies {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    background-image: url("https://th.bing.com/th/id/R.2362fae216bca4b64c66a0dc45922e3e?rik=OIYU%2bEMH0dYGPw&riu=http%3a%2f%2fbesthqwallpapers.com%2fUploads%2f25-2-2021%2f157484%2fthumb2-4k-filmstrip-textures-vector-backgrounds-grunge-backgrounds-cinematograph.jpg&ehk=hDR9XAo0KfIIcSfPKUP%2f0D%2bkyExz6KhnNdHe%2fMpamBs%3d&risl=&pid=ImgRaw&r=0");
-}
-.movie_page {
-    display: flex;
-    justify-content: center;
-}
-.movie {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    Height: 100vh;
-    background-image: url("https://ak5.picdn.net/shutterstock/videos/14759545/thumb/1.jpg")
+.movie_details {
+    padding-top: 15px;
 }
 .movie_titles {
     color: chartreuse;
     padding-top: 20px;
 }
-.homepage, .gameshp, .magic, .secret, .rock, .adminpage {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 125vh;
-}
+
 .links{
     color: white;
     text-decoration: solid;
-    margin: auto 20px;
+    display: block;
+    margin: 10px auto;
+    font-size: 30px;
 }
 div.form {
-    width: 75%;
-    margin: 50px auto;
+    width: 50%;
+    margin: 0 auto;
+}
+.yoda {
+    width: 100%;
 }
 a {
     margin: 9.5;
@@ -86,6 +53,12 @@ a {
 }
 .poster:hover {
     box-shadow: 0 5px 10px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.rules {
+    display: block;
+    margin: 10px auto;
+    height: 60vh;
+    width: auto;
 }
 .feature {
     height: 90vh;
@@ -107,6 +80,9 @@ label {
   h3 {
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+  .strules {
+    padding-top: 0;
   }
   .text-center{
     color: white;
@@ -152,7 +128,9 @@ label {
     margin: 0 auto;
   }
   .adminpage {
-    background-color: bisque;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/771/266/483/safe-deposit-box-wallpaper-preview.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
   }
 .survive {
     display: flex;
@@ -162,7 +140,7 @@ label {
 }
 
 .sawwonpage {
-    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2020/02/Saw-Game-Over.jpg?q=50&fit=crop&w=1500&dpr=1.5");
+    background-image: url("https://thumbs.gfycat.com/PerfectYawningElk-max-1mb.gif");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -184,3 +162,120 @@ h1.won {
     padding: 0
 
 }
+.magic_title {
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+.emails {
+    margin-left: 40px;
+    color: black;
+}
+p {
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.adminh1 {
+    color: black;
+}
+.reviews {
+
+}
+label {
+    /* width: 50%; */
+    margin: 0 auto;
+}
+.reducelabel{
+        width: 50%;
+        margin: 0 auto;
+}
+input {
+    width: 100%;
+}
+button {
+    color: white;
+    background-color: #dc3545;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+    display: block;
+    margin: 15px auto;
+}
+button:hover {
+    color: #fff;
+    background-color: #bb2d3b;
+    box-shadow: 0 12px 16px 0 rgba(139, 61, 61, 0.24), 0 17px 50px 0 rgba(147, 46, 46, 0.19)
+}
+select {
+    width: 100%;
+    word-spacing: normal;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+}
+.st {
+    width: 100%;
+}
+.sttrek {
+    display: flex;
+    justify-content: space-around;
+}
+.saw_button {
+    width: 8%;
+    margin: 15px 0;
+}
+.choice {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.icontrek {
+    display: flex;
+    justify-content: space-around;
+}
+.sawtext, h1.sawtext {
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+}
+h3.sawtext {
+    padding: 0;
+}
+.sw {
+    padding-top: 100px;
+}
+.custom_label {
+    color: white;
+}
+.error {
+    padding: 0;
+    margin: 0;
+}
+.btn.btn-success {
+    margin-top: 30px;
+}
+/* .loser {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .saw {
+    width: 100%;
+    height: auto;
+  }
+  
+  .lost {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    text-align: center;
+  } */

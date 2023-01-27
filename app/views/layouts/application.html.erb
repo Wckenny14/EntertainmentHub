@@ -33,37 +33,28 @@
                   <li><%= link_to 'Star Trek Game', rockpaperscissor_path, :class => 'dropdown-item' %></li>
                 </ul>
               </li>
-              <% if @current_user.present?%>
-                <% if @current_user.admin? %>
-                    <li class="nav-item">
-                      <%=link_to "All users", users_path, :class => 'nav-link active' %>
-                    </li>
-                    <li class="nav-item">
-                      <%= link_to "All reviews", reviews_path, :class => 'nav-link active' %>  
-                    </li>
-                <% else %>
-                    <li class="nav-item">
-                      <%= link_to "My Reviews", reviews_path, :class => 'nav-link active' %>
-                    </li>
-                    <li class="nav-item">
-                      <%= link_to "New Review", new_review_path, :class => 'nav-link active' %>
-                    </li>
-                <% end %>
-                <li class="nav-item">
-                  <%= link_to 'Update my details', edit_user_path(@current_user), :class => 'nav-link active' %>
-                </li>
-                <li>
-                  <%= link_to "Sign out", login_path, :method => 'delete', :class => 'nav-link active' %>
-                </li>
-              <% else %>
-                <li class="nav-item">
-                  <%= link_to 'Sign up', new_user_path, :class => 'nav-link active' %>
-                </li>
-                <li class="nav-item">
-                  <%= link_to 'Log in', login_path, :class => 'nav-link active' %>
-                </li>
-              <% end%>
-            </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/games" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <% if @current_user.present?%>
+                    <% if @current_user.admin? %>
+                      <li><%=link_to "All users", users_path, :class => 'dropdown-item' %></li>
+                      <li><%= link_to "All reviews", reviews_path, :class => 'dropdown-item' %></li>
+                      <li><%= link_to "New Movie", new_movie_path, :class => 'dropdown-item' %></li>
+                    <% else %>
+                      <li><%= link_to "My Reviews", reviews_path, :class => 'dropdown-item' %></li>
+                    <% end %>
+                    <li><%= link_to "New Review", new_review_path, :class => 'dropdown-item' %></li>
+                    <li><%= link_to 'Update my details', edit_user_path(@current_user), :class => 'dropdown-item' %></li>
+                    <li><%= link_to "Sign out", login_path, :method => 'delete', :class => 'dropdown-item' %></li>
+                  <% else %>
+                    <li><%= link_to 'Sign up', new_user_path, :class => 'dropdown-item' %></li>
+                    <li><%= link_to 'Log in', login_path, :class => 'dropdown-item' %></li>
+                  <% end%>
+                </ul>
+              </li>
           </div>
         </div>
       </nav>

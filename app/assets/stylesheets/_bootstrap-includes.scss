@@ -1,1 +1,86 @@
 @import 'bootstrap';
+@mixin backGround {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 125vh;
+}
+@mixin picSizeRepeat  {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+////// Background images
+.homepage, .gameshp, .magic, .secret, .rock, .adminpage, .trek, .adminbg, .swbg {
+    @include backGround
+}
+// root_path background (homepage)
+.homepage {
+    background-image: url("home.webp");
+}
+// all admin backgrounds user new, edit, update
+.adminbg {
+    background-image: url("admin1.jpg");
+}
+// game_path background (Games hp)
+.gameshp {
+    background-image: url("gameshp.jpeg");
+}
+// magic_path background (magic 8 ball index page)
+.magic {
+    background-image: url("magichp.png");
+}
+.swbg {
+    background-image: url("starwarsbg.jpg");
+}
+
+////// All scss related to the rock paper scissors game
+// rockpaperscissors_path background (RPS index page)
+.rock {
+    background-image: url("startrek.jpg");
+}
+.trek {
+    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+.space {
+    display: block;
+    margin-left: 300px;
+}
+.fly {
+    display: block;
+    margin: 5px auto;
+    height: 50vh;
+}
+.icon {
+    height: 90px;
+    width: auto;
+}
+.trekanswer {
+    padding-top: 20px;
+    margin-bottom: 0
+}
+
+////// All scss related to the secret number game
+// secret_path background (secret number index page)
+.secret {
+    background-image: url(https://images3.alphacoders.com/812/812935.jpg);
+}
+
+////// All scss related to Movies
+.movies {
+    @include picSizeRepeat;
+    width: auto;
+    background-image: url("movie.jpg");
+}
+
+.movie_page {
+    display: flex;
+    justify-content: center;
+}
+
+.movie {
+    @include picSizeRepeat;
+    width: auto;
+    height: 100vh;
+    background-image: url('movie.jpg')
+}

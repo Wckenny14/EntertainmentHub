@@ -1,16 +1,19 @@
-<h1><%= @review.title %></h1>
+<div class="reviews">
+    <h1><%= @review.title %></h1>
 
-<ul>
-    <li>Title: <%= @review.title %></li>
-    <li>Movie: <%= @review.movie.title %></li>
-    <li>Comment: <%= @review.comment %></li>
-</ul>
-<% if @review.present? %>
-    <% if @review.movie.image.present? %>
-    <%= link_to image_tag(@review.movie.image, :class => 'thumb'), @review.movie %>
-    <% end %>
-<% end%>
-<div class="container">
-    <%= link_to 'Edit review', edit_review_path(@review) %>
-    <%= link_to 'Delete review', @review, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+    <ul>
+        <li>Title: <%= @review.title %></li>
+        <li>Movie: <%= @review.movie.title %></li>
+        <li>Comment: <%= @review.comment %></li>
+        <li>Created by: <%= @user.name %></li>
+    </ul>
+    <% if @review.present? %>
+        <% if @review.movie.image.present? %>
+        <%= link_to image_tag(@review.movie.image, :class => 'thumb'), @review.movie %>
+        <% end %>
+    <% end%>
+    <div class="container">
+        <%= link_to 'Edit review', edit_review_path(@review) %>
+        <%= link_to 'Delete review', @review, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+    </div>
 </div>

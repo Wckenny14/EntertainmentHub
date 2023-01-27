@@ -1,13 +1,13 @@
-<h1 class="dash">------------------------</h1>
-<h2>
-    <% if @current_user.present? %>
-        <%= "#{@current_user.name}, this question you have asked: '#{@question }'" %>
-    <% else %>
-        <%= "This question, you have asked: '#{@question }'" %>
-    <% end %>
-</h2>
-<h1 class="dash">------------------------</h1>
-<h1>Answer</h1>
-<h2>
-    <%= @result %>
-</h2>
+<div class="swbg">
+    <h2 class = "sw">
+        <% if @current_user.present? %>
+            <%= "#{@current_user.name}, this answer you have received:" %>
+        <% else %>
+            <%= "This answer you have received:" %>
+        <% end %>
+    </h2>
+    <h1 class="dash">------------------------</h1>
+    <h2>
+        <%= @result %>
+    </h2>
+</div>

@@ -1,10 +1,12 @@
-<%= form_for @review do |f| %>
-    <%= f.label :title, :class => 'form-label' %>
-    <%= f.text_field :title, :class => 'form-control' %>
-    <%= f.label :comment, :class => 'form-label' %>
-    <%= f.text_field :comment, :class => 'form-control' %>
-    <%= f.label :movie_id, :class => 'form-label' %>
-    <%= f.select :movie_id, Movie.pluck(:title, :id), :include_blank => false, :class => 'form-control' %> 
-    <%# this replaces the button to submit the form %>
-    <%= f.submit %>
-<% end %>
+<div class="form">
+    <%= form_for @review do |f| %>
+        <%= f.label :title, :class => 'custom_label' %>
+        <%= f.text_field :title, :class => 'form-control' %>
+        <%= f.label :comment, :class => 'custom_label' %>
+        <%= f.text_field :comment, :class => 'form-control' %>
+        <%= f.label :movie_id, :class => 'custom_label' %>
+        <%= f.select :movie_id, Movie.pluck(:title, :id), :include_blank => false, :class => 'form-control' %> 
+        <%# this replaces the button to submit the form %>
+        <%= f.submit 'Submit', :class => 'btn btn-success' %>
+    <% end %>
+    </div>
