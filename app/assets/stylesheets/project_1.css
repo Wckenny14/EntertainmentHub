@@ -3,6 +3,7 @@
 }
 body {
     background: #800020;
+    /* background-image: url("/admin1.jpg"); */
 }
 li {
     color: white;
@@ -42,6 +43,11 @@ a {
 .thumb {
     height: 15em;
     width: 10em;
+}
+.thumb1{
+    height: 15em;
+    width: 10em;
+    margin-left: 30px;
 }
 .poster {
     height: 15em;

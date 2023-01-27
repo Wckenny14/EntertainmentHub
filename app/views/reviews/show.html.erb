@@ -1,15 +1,14 @@
 <div class="reviews">
-    <h1><%= @review.title %></h1>
+    <h1></h1>
 
     <ul>
         <li>Title: <%= @review.title %></li>
         <li>Movie: <%= @review.movie.title %></li>
         <li>Comment: <%= @review.comment %></li>
-        <li>Created by: <%= @user.name %></li>
     </ul>
     <% if @review.present? %>
         <% if @review.movie.image.present? %>
-        <%= link_to image_tag(@review.movie.image, :class => 'thumb'), @review.movie %>
+        <%= link_to image_tag(@review.movie.image, :class => 'thumb1'), @review.movie %>
         <% end %>
     <% end%>
     <div class="container">
