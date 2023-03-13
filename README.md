@@ -13,7 +13,8 @@ The game models are all independent of each other and built simply to function i
 The movie database is built upon three models:
 - Users
 - Reviews
-- Movies
+- Movies<br>
+
 The models are linked (associated) together to allow users to log in and leave reviews on the movies of their choice.
 
 I originally planned for a further model of favourites which would have been associated with users and movies on a many to many basis. Time constraints meant that this model was abandoned but you will still the model, controller and some code in relation to this in my files.
