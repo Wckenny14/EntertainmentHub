@@ -2,9 +2,9 @@
 
 My first Ruby project is a web application designed for adult use and split into two key themes. 
 
-Theme 1 is a movie database and has been built for all users (no adult specific themes) to browse movies, find where they are avilable to watch and read and add reviews.
+The first theme is a movie database and has been built for all users (no adult specific themes) to browse movies, find where they are avilable to watch and read and add reviews.
 
-The second theme is around games that I have built in Ruby and wanted to showcase. One of the games has an adult theme and should not be used by children.
+The second theme is around games that I have built in Ruby and wanted to showcase. One of the games has an adult theme and should not be used with caution.
 
 ## Models
 
