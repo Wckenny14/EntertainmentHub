@@ -1,4 +1,4 @@
-# GA Project 1 - Movie Database and Games
+# Entertainment Hub
 
 My first Ruby project is a web application designed for adult use and split into two key themes. 
 
